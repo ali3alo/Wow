@@ -250,8 +250,13 @@ async def _(event):
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
  
-- Done ↣  (@{username}) !
-- By ↣ @G_5_G !
+≧ 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𝑹𝑰𝑮𝑯𝑻𝑺 𝑶𝑭 𝑻𝑯𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 →
+
+~ ( @G_5_G ° @LL1XX ) ~
+
+-- -- -- -- -- -- -- -- -- -- -- -- --
+
+- ⎱UserName ↣  ❲ @{username}❳ !
   
   
   ''')
