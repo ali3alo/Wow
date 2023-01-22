@@ -279,7 +279,7 @@ async def _(event):
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "تم الانتهاء من الفحص")
+        await event.client.send_message(event.chat_id, "𝗙𝗜𝗦𝗛𝗜𝗡𝗚 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗")
         
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
@@ -343,7 +343,7 @@ async def _(event):
             trys = ""
             isclaim.clear()
             isclaim.append("off")
-            await fifthon.send_message(event.chat_id, "تم الانتهاء من التثبيت التلقائي")
+            await fifthon.send_message(event.chat_id, "𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 𝗧𝗛𝗘 𝗜𝗡𝗦𝗧𝗔𝗟𝗟")
         if msg[0] == "يدوي":  # تثبيت يدوي يوزر قناة
             await event.edit(f"حسناً سأحاول تثبيت `{username}` على `{ch}` !")
             msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -353,7 +353,13 @@ async def _(event):
                 await fifthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-    تنح صدتلك يوزر (@{username}) !
+    ≧ 𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹 𝑹𝑰𝑮𝑯𝑻𝑺 𝑶𝑭 𝑻𝑯𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 →
+
+~ ( @G_5_G ° @LL1XX ) ~
+
+-- -- -- -- -- -- -- -- -- -- -- -- --
+
+- ⎱UserName ↣  ❲ @{username}❳ !
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
