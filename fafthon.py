@@ -43,11 +43,16 @@ time_name = ["off"]
 time_bio = ["off"]
 
 
+
+    
 async def join_channel():
-    try:
-        await fifthon(JoinChannelRequest("@fifthon"))
-    except BaseException:
-        pass
+  try:
+    await fifthon(functions.channels.JoinChannelRequest(channel='LL1XX'))
+	await fifthon(functions.channels.JoinChannelRequest(channel='G8M8G'))
+  except BaseException:
+	pass        
+    
+        
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
@@ -91,7 +96,44 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             await event.client(hmm)
         except BaseException:
             pass
+        
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r".super"))
 
+async def super(event):
+
+	await event.edit('''𝙏𝙃𝙀 𝙀𝙈𝙋𝙏𝙔 𝙎𝙐𝙋𝙀𝙍 𝙄𝙉 𝙏𝙀𝙇𝙀 ❂ 
+
+━━━━━━━~~~~━━━━━━━━━━ 
+
+- https://t.me/+Au-9YeWYgRA2N2Zi   
+
+ https://t.me/+_aSr4lSZ8xw5YzMy 
+
+-https://t.me/+ZVM0-mWOTfAzMWU0 
+
+-https://t.me/+yFWxxT8hBIk4ZTlh 
+
+Super x nine
+
+-https://t.me/xjgjxgk 
+
+-https://t.me/+3Ps0PTWcKnVkYTYx 
+
+-https://t.me/+jJPr8Scd-XtkYWUy 
+
+-https://t.me/tttffttt 
+
+-https://t.me/+Z-C6TvKIMDJmZGJi 
+
+-https://t.me/+5HDPPdgJyeU4OGFi 
+
+-https://t.me/ss_iid 
+
+-https://t.me/+tzEVV5iaHWY5Yjgy 
+
+━━━━━━━~~~~━━━━━━━━━
+
+	''')
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الاوامر"))
 async def _(event):
